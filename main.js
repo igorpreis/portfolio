@@ -89,5 +89,3 @@ document.addEventListener('DOMContentLoaded',function(event){
   StartTextAnimation(0);
 });
 
-
-var htmlHeader = "<nav class='navbar'><div class='box-navbar-logo'><a href='#top'><span>&lt;</span>Igor Reis<span>/&gt;</span></a></div><div class='box-navbar-menu'><ul id='navbar-menu'><li class='current'><a ref='#top'>Início</a></li><li><a href='#resume'>Resumo</a></li><li><a href='#about'>Sobre</a></li><li><a href='#skills'>Skills</a></li><li><a href='#portfolio'>Portfólio</a></li></ul></div> <div class='box-navbar-btn'><a href='https://api.whatsapp.com/send?phone=351913959487' target='_blank'><button type='button' class='btn-primary btn-header'><i class='fa-brands fa-whatsapp'></i>Whatsapp</button></a></div></nav>"
