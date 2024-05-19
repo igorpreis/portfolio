@@ -1,0 +1,224 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #efeef3;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 1200px;
+    margin: 80px auto 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+
+#menu {
+    height: 700px;
+    background-color: white;
+    box-sizing: border-box;
+    border: 1px solid #dee2e6;
+
+}
+
+.formNotas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+
+}
+
+h1 {
+    display: flex;
+    color: white;
+    background-color: #343a40;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 0px;
+    justify-content: space-between;
+}
+
+h1 button {
+    background-color: transparent;
+    border: none;
+    transition: all 0.3s;
+}
+
+h1 button:hover {
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+input {
+    width: 80%;
+    height: 40px;
+    font-size: 18px;
+    background-color: #f1f1f1;
+    border: none;
+    padding: 12px;
+    box-sizing: border-box;
+
+
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+
+}
+
+textarea {
+    width: 80%;
+    height: 200px;
+    font-size: 18px;
+    background-color: #f1f1f1;
+    border: none;
+    padding: 12px;
+    box-sizing: border-box;
+
+}
+
+#btnAcao {
+    padding: 20px;
+    width: 80%;
+    background-color: #1ca420;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: none;
+    transition: all 0.3s;
+
+}
+
+#btnAcao:hover {
+    background-color: #09940d;
+
+
+}
+
+#listaNotas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    transition: all 0.6s;
+
+}
+
+.nota {
+    width: 100%;
+    height: 300px;
+    background-color: #ffffa5;
+    padding: 20px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    overflow: hidden;
+    border-bottom-right-radius: 40px 40px;
+    box-sizing: border-box;
+
+}
+
+.nota::before {
+    content: "";
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 0;
+    height: 0;
+    
+    border-top: 30px solid rgba(0, 0, 0, 0.1);
+    border-right: 30px solid rgba(0, 0, 0, 0.1);
+}
+
+#triangle-topleft {}
+
+
+.nota h3 {
+    margin-top: 0;
+    font-size: 16px;
+}
+
+.nota p {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.nota small {
+    color: #888;
+    font-size: 10px;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+}
+
+.btn-edit {
+    background-color: #343a40;
+    color: white;
+    padding: 3px 2px 0px 2px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-edit:hover {
+    background-color: #131619;
+}
+
+.red {
+    background-color: #cf2424 !important;
+}
+
+.red:hover {
+    background-color: #aa1a1a !important;
+}
+
+.botoes {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.cores{
+    display: flex;
+    gap: 10px;
+    width: 80%;
+
+}
+.btn-cor {
+    display: flex;
+    flex-grow: 1;
+    height: 40px;
+    width: 40px;    
+    border: 0px solid white;
+    cursor: pointer;
+    transition: all .5s;
+    box-sizing: border-box;
+}
+.corAtiva{
+    width: 80px;
+    border: 1px solid #343a40;
+}
+
+.amarelo {
+    background-color: #ffffa5;
+}
+
+.azul {
+    background-color: #c6e3ff;
+}
+
+.verde {
+    background-color: #bdffb0;
+}
+
+
+.rosa {
+    background-color: #ffc6e9;
+}
+
+.roxo {
+    background-color: #d7c5ff;
+}

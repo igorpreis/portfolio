@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Notas dos Alunos</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center my-4">Notas dos Alunos</h1>
+    <table class="table table-bordered">
+      <thead class="table-dark">
+        <tr>
+          <th>Nome</th>
+          <th>Matemática</th>
+          <th>Biologia</th>
+          <th>Química</th>
+        </tr>
+      </thead>
+      <tbody id="alunos-table"></tbody>
+    </table>
+  </div>
+
+  <script>
+    let alunos = [
+      ["José Antunes", 18, 18, 20],
+      ["Maria Antonieta", 15, 13, 19],
+      ["Ana Antunes", 19, 14, 15],
+      ["Rute Rosa", 17, 15, 13]
+    ];
+
+    let alunosTable = document.getElementById('alunos-table');
+
+    alunos.forEach(aluno => {
+      let row = document.createElement('tr');
+      aluno.forEach(nota => {
+        let cell = document.createElement('td');
+        cell.textContent = nota;
+        row.appendChild(cell);
+      });
+      alunosTable.appendChild(row);
+    });
+  </script>
+</body>
+</html>
