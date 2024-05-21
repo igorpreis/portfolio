@@ -32,7 +32,7 @@ function w3RemoveClass(element, name) {
 }
 
 // Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("portfolio-buttons");
+var btnContainer = document.getElementClassName("portfolio-buttons");
 var btns = btnContainer.getElementsByClassName("btn-filter");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function(){

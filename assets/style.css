@@ -4,9 +4,11 @@
     scrollbar-width: thin;
     scrollbar-color: var(--color-primary) var(--color-bg-scroll);
 }
-html, body {
+
+html,
+body {
     height: 100%;
- }
+}
 
 :root {
     --color-primary: #00B342;
@@ -136,7 +138,7 @@ a {
 
 /* Nav Menu Style */
 header {
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 100%;
     margin: 0;
@@ -155,6 +157,7 @@ header {
     padding: 0 20px;
     align-items: center;
     box-sizing: border-box;
+    justify-content: space-between;
 }
 
 .navbar span {
@@ -163,7 +166,6 @@ header {
 
 .box-navbar-logo {
     display: flex;
-    width: 25%;
     justify-content: left;
     font-weight: var(--font-medium);
     font-size: 32px;
@@ -171,7 +173,6 @@ header {
 
 .box-navbar-menu {
     display: flex;
-    width: 50%;
     justify-content: center;
 }
 
@@ -199,7 +200,6 @@ header {
 
 .box-navbar-btn {
     display: flex;
-    width: 25%;
     justify-content: right;
 }
 
@@ -212,7 +212,7 @@ main {
 #intro {
     display: flex;
     max-width: 1200px;
-    margin: 50px auto;
+    margin: 110px auto 70px auto;
     height: 550px;
 }
 
@@ -360,13 +360,14 @@ main {
     max-width: 1300px;
     margin: 70px auto 0 auto;
     padding: 0 20px 0 20px;
+    max-width: 1100px;
 
 }
 
 .skill-card {
     aspect-ratio: 1;
     background-color: var(--color-background-contrast);
-    width: 9rem;
+    width: 10rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -395,14 +396,14 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     row-gap: 45px;
-    column-gap: 30px;
+    column-gap: 35px;
     justify-content: center;
     justify-items: center;
 }
 
 /* Section Portfolio*/
 #portfolio {
-    padding: 100px 20px;
+    padding: 150px 20px;
     background-color: var(--color-background-contrast);
 }
 
@@ -410,7 +411,7 @@ main {
     font-weight: var(--font-bold);
 }
 
-#portfolio-buttons {
+.portfolio-buttons {
     margin: 0 auto;
     max-width: 700px;
     padding: 20px;
@@ -421,18 +422,19 @@ main {
 
 .container-works {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr) );
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 40px;
     justify-content: center;
     justify-items: center;
     margin-top: 100px;
-    
+
 }
 
 .portfolio-works {
     border-radius: 15px;
     aspect-ratio: 8 / 9;
     width: 100%;
+    max-width: 400px;
     margin: 0 auto 30px;
     position: relative;
     overflow: hidden;
@@ -447,24 +449,25 @@ main {
     opacity: 0.9;
 }
 
-.portfolio-works:hover img{
+.portfolio-works:hover img {
     transform: scale(1.1);
     opacity: 1;
 }
-.category-work{
+
+.category-work {
     font-size: 14px;
     padding: 5px 5px;
     position: absolute;
     top: 15px;
     left: 20px;
-    padding:5px 8px ;
+    padding: 5px 8px;
     border-radius: 8px;
     background: var(--color-bg-scroll);
     border: 1px solid var(--color-background-contrast-plus);
-    z-index: 1;    
+    z-index: 1;
     text-align: left;
     font-weight: var(--font-light);
-    
+
 }
 
 
@@ -479,7 +482,7 @@ main {
     right: 0;
     margin: 0 auto;
     z-index: 1;
-    text-align: left;    
+    text-align: left;
 }
 
 .box-info-work::before {
@@ -491,21 +494,23 @@ main {
     height: 100%;
     transition: opacity 0.4s linear;
     background: linear-gradient(90deg, var(--color-background-contrast-plus) 0%, var(--color-bg-scroll) 100%);
-    opacity: 0;    
+    opacity: 0;
     border: 1px solid var(--color-background-contrast-plus);
-    border-radius: 15px;    
+    border-radius: 15px;
     box-sizing: border-box;
     z-index: -1;
 }
+
 .portfolio-works:hover .box-info-work:before {
     opacity: 1;
 }
 
-.portfolio-works p{
+.portfolio-works p {
     font-size: 22px;
     font-weight: var(--font-sbold);
 
 }
+
 .show {
     display: block;
 }
@@ -517,7 +522,7 @@ main {
     font-weight: var(--font-medium);
     border: none;
     outline: none;
-    padding: 16px 16px;
+    padding: 16px 0px;
     border-radius: 30px;
     background-color: transparent;
     cursor: pointer;
@@ -545,11 +550,15 @@ main {
     margin: 0 auto;
 
 }
-.container-contact{
+
+.container-contact {
     max-width: 1000px;
     margin: 0 auto;
 }
-input, select, textarea {
+
+input,
+select,
+textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -558,23 +567,23 @@ input, select, textarea {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
-  }
-  
-  input[type=submit] {
+}
+
+input[type=submit] {
     background-color: #04AA6D;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
+}
+
+input[type=submit]:hover {
     background-color: #45a049;
-  }
-  
-  .container-contact {
+}
+
+.container-contact {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
-  }
+}

@@ -1,20 +1,29 @@
 /* Breakpoint < 1024 */
 @media (max-width: 1024px) {
+    #navbar-menu {
+
+        gap: 15px;
+
+    }
+
     #intro {
         flex-direction: column-reverse;
         align-items: center;
         height: auto;
         width: 100%;
         text-align: center;
-        margin: 30px auto 50px auto;
+        margin-bottom: 80px;
+        margin-top: 90px;
+        padding: 0 20px;
     }
+
 
     #intro p {
         margin: 10px auto 15px auto;
     }
 
     .half-section {
-        width: 90% !important;
+        width: 100%;
         margin: 0 auto;
     }
 
@@ -57,14 +66,17 @@
 
 /* Breakpoint < 768px */
 @media (max-width: 768px) {
+    .navbar {
+        justify-content: space-between;
+        width: 100%;
+    }
     .box-navbar-logo {
         width: 50%;
         font-size: 28px;
     }
-
-    .navbar {
-        justify-content: space-between;
-        width: 100%;
+    
+    .btn-header {
+        padding: 10px 18px;
     }
 
     .box-navbar-menu {
@@ -72,10 +84,7 @@
 
     }
 
-    #intro {
-        margin-bottom: 80px;
-        margin-top: 25px;
-    }
+  
 
     #intro p {
         font-size: 16px;
@@ -92,13 +101,29 @@
     }
 
     #resume {
-        padding: 50px 0px;
+        padding: 40px 0px;
+    }
+    .resume-experience{
+        margin-top: 60px;
     }
 
     #about {
         padding: 100px 20px 80px 20px;
     }
 
+
+    .resume-education h3, .resume-experience h3 {
+        font-size: 34px;
+    }
+    .resume-education h4, .resume-experience h4 {
+        font-size: 18px;
+    }
+
+
+    .container-works {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
 
 
 
