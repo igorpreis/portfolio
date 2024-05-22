@@ -559,7 +559,7 @@ select,
 textarea {
     font-size: 18px;
     width: 100%;
-    padding: 18px;
+    padding: 16px;
     border: 1px solid var(--color-bg-scroll);
     border-radius: 4px;
     box-sizing: border-box;

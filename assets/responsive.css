@@ -99,18 +99,16 @@
         font-size: 15px;
         padding: 15px 20px;
     }
+    #about {
+        padding: 100px 20px 80px 20px;
+    }
 
     #resume {
         padding: 40px 0px;
     }
     .resume-experience{
         margin-top: 60px;
-    }
-
-    #about {
-        padding: 100px 20px 80px 20px;
-    }
-
+    }   
 
     .resume-education h3, .resume-experience h3 {
         font-size: 34px;
@@ -119,6 +117,11 @@
         font-size: 18px;
     }
 
+
+    #portfolio {
+        padding: 100px 20px;
+        background-color: var(--color-background-contrast);
+    }
 
     .container-works {
         display: grid;
