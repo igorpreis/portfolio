@@ -89,3 +89,17 @@ document.addEventListener('DOMContentLoaded',function(event){
    StartTextAnimation(0);
  });
 
+ function submitForm() {
+        
+  const form = document.querySelector('.my-form')
+  const formData = new FormData(form)
+  const url = 'https://formsubmit.co/192dbeb7d260795dad35bd9430a7ebfa'
+  fetch(
+    url,
+    {
+      method: 'POST',
+      body: formData
+    }
+  )
+  return false
+}
