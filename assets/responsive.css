@@ -57,7 +57,16 @@
         padding: 35px;
         margin-bottom: 30px;
         margin-right: auto;
-
+    }
+    .box-footer {
+        flex-direction: column-reverse;
+    }
+    .footer-text{
+        text-align: center;
+    }
+    .footer-infos{
+        align-items: center;
+        margin-top: 80px;
     }
 
 }
@@ -131,7 +140,15 @@
     .skill-card {
         width: 9rem;
     }
-
+    .box-footer {
+        display: flex;
+        max-width: 1320px;
+        margin: 0 auto;
+        padding: 0 40px;
+        box-sizing: border-box;
+        flex-direction: column-reverse;
+    }
+    
 
 
 }
