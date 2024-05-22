@@ -360,11 +360,9 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     row-gap: 45px;
-    column-gap: 30px;
+    column-gap: 45px;
     margin: 70px auto 0 auto;
     justify-items: center;
-
-
 }
 
 
