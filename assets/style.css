@@ -61,6 +61,7 @@ p,
 a {
     color: var(--color-text);
     font-family: var(--font-default);
+    line-height: 150%;
 }
 
 
@@ -76,7 +77,7 @@ a {
 }
 
 .header-section {
-    max-width: 550px;
+    max-width: 600px;
     margin: 0 auto;
     margin-bottom: 40px;
 }
@@ -295,7 +296,7 @@ main {
 /* Section Resumo*/
 #resume {
     background-color: var(--color-background-contrast);
-    padding: 150px 0px;
+    padding: 80px 0 150px 0;
 }
 
 .box-resume {
@@ -343,7 +344,7 @@ main {
 
 /* Section Skills*/
 #skills {
-    padding: 120px 20px 150px 20px;
+    padding: 120px 50px 150px 50px;
     background-color: var(--color-background);
 }
 
@@ -361,6 +362,7 @@ main {
     row-gap: 45px;
     column-gap: 35px;
     margin: 70px auto 0 auto;
+    justify-items: center;
 
 
 }
@@ -374,6 +376,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
     border-top-left-radius: 1.5rem;
     transition: 0.3s;
     border-bottom: 3px solid var(--color-primary);

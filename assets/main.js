@@ -48,7 +48,7 @@ for (var i = 0; i < btns.length; i++) {
 // Efeito - Digitar Textos da Intro
 document.addEventListener('DOMContentLoaded',function(event){
   // array with texts to type in typewriter
-  var dataText = [ "Web Designer...", "Front-End Developer.",];
+  var dataText = [ "Web Designer...", "Digital Strategist...", "Front-End Developer."];
   
   // type one text in the typwriter
   // keeps calling itself until the text is finished
