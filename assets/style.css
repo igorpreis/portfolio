@@ -360,8 +360,8 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     row-gap: 45px;
     column-gap: 35px;
-    margin: 70px auto 0 auto;    
-    
+    margin: 70px auto 0 auto;
+
 
 }
 
@@ -547,7 +547,7 @@ main {
 }
 
 .container-contact {
-    
+
     margin: 0 auto;
 }
 
@@ -578,24 +578,28 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: var(--color-primary-transp);
 }
+
+textarea:focus,
 input:focus {
-    border: none;
-  }
+    outline: none;
+}
 
 .container-contact {
-    border-radius: 5px;    
+    border-radius: 5px;
     padding: 0 20px;
     max-width: 800px;
 }
 
-footer{
+
+
+footer {
     background-color: var(--color-bg-scroll);
     height: 500px;
 
 }
 
-#thanks{
+#thanks {
     margin: 100px auto 50px auto;
     text-align: center;
 
-} 
+}
