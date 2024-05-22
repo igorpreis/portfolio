@@ -32,7 +32,7 @@ function w3RemoveClass(element, name) {
 }
 
 // Add active class to the current button (highlight it)
-var btnContainer = document.getElementClassName("portfolio-buttons");
+var btnContainer = document.getElementById("portfolio-buttons");
 var btns = btnContainer.getElementsByClassName("btn-filter");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function(){
@@ -48,7 +48,7 @@ for (var i = 0; i < btns.length; i++) {
 // Efeito - Digitar Textos da Intro
 document.addEventListener('DOMContentLoaded',function(event){
   // array with texts to type in typewriter
-  var dataText = [ "Graphic Designer +", "Front-End Developer.",];
+  var dataText = [ "Web Designer...", "Front-End Developer.",];
   
   // type one text in the typwriter
   // keeps calling itself until the text is finished
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded',function(event){
     // text finished, call callback if there is a callback function
     else if (typeof fnCallback == 'function') {
       // call callback after timeout
-      setTimeout(fnCallback, 1500);
+      setTimeout(fnCallback, 2000);
     }
   }
   // start a typewriter animation for a text in the dataText array

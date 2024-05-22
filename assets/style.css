@@ -356,13 +356,15 @@ main {
 }
 
 .box-skills-card {
-    display: flex;
-    max-width: 1300px;
-    margin: 70px auto 0 auto;
-    padding: 0 20px 0 20px;
-    max-width: 1100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    row-gap: 45px;
+    column-gap: 35px;
+    margin: 70px auto 0 auto;    
+    
 
 }
+
 
 .skill-card {
     aspect-ratio: 1;
@@ -392,14 +394,7 @@ main {
     width: 3rem;
 }
 
-.box-skills-card {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    row-gap: 45px;
-    column-gap: 35px;
-    justify-content: center;
-    justify-items: center;
-}
+
 
 /* Section Portfolio*/
 #portfolio {
@@ -411,7 +406,7 @@ main {
     font-weight: var(--font-bold);
 }
 
-.portfolio-buttons {
+#portfolio-buttons {
     margin: 0 auto;
     max-width: 700px;
     padding: 20px;
@@ -552,16 +547,17 @@ main {
 }
 
 .container-contact {
-    max-width: 1000px;
+    
     margin: 0 auto;
 }
 
 input,
 select,
 textarea {
+    font-size: 18px;
     width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
+    padding: 18px;
+    /* border: 1px solid #ccc; */
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 6px;
@@ -570,20 +566,29 @@ textarea {
 }
 
 input[type=submit] {
-    background-color: #04AA6D;
+    background-color: var(--color-primary);
     color: white;
-    padding: 12px 20px;
+    padding: 18px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: all 0.3s;
 }
 
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: var(--color-primary-transp);
 }
 
 .container-contact {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
+    border-radius: 5px;    
+    padding: 0 20px;
+    max-width: 800px;
+}
+
+footer{
+    display: flex;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+
 }
