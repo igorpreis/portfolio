@@ -1,154 +1,144 @@
 /* Breakpoint < 1024 */
 @media (max-width: 1024px) {
-    #navbar-menu {
+  #navbar-menu {
+    gap: 15px;
+  }
 
-        gap: 15px;
+  #intro {
+    flex-direction: column-reverse;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 80px;
+    margin-top: 90px;
+    padding: 0 20px;
+  }
 
-    }
+  #intro p {
+    margin: 10px auto 15px auto;
+  }
 
-    #intro {
-        flex-direction: column-reverse;
-        align-items: center;
-        height: auto;
-        width: 100%;
-        text-align: center;
-        margin-bottom: 80px;
-        margin-top: 90px;
-        padding: 0 20px;
-    }
+  .half-section {
+    width: 100%;
+    margin: 0 auto;
+  }
 
+  .intro-section-left {
+    padding-top: 0px;
+  }
 
-    #intro p {
-        margin: 10px auto 15px auto;
-    }
+  .intro-section-right {
+    text-align: center;
+  }
 
-    .half-section {
-        width: 100%;
-        margin: 0 auto;
-    }
+  .intro-section-right img {
+    max-width: 400px;
+    margin-bottom: 10px;
+  }
 
-    .intro-section-left {
-        padding-top: 0px;
-    }
+  .box-intro-buttons {
+    justify-content: center;
+  }
 
-    .intro-section-right {
-        text-align: center;
-    }
+  .box-resume {
+    flex-direction: column;
+  }
 
-    .intro-section-right img {
-        max-width: 400px;
-        margin-bottom: 10px;
-    }
+  #resume {
+  }
 
-    .box-intro-buttons {
-        justify-content: center;
-    }
-
-    .box-resume {
-        flex-direction: column;
-    }
-
-    #resume {
-        
-    }
-
-    .resume-widget {
-        position: relative;
-        padding: 35px;
-        margin-bottom: 30px;
-        margin-right: auto;
-    }
-    .box-footer {
-        flex-direction: column-reverse;
-    }
-    .footer-text{
-        text-align: center;
-    }
-    .footer-infos{
-        align-items: center;
-        margin-top: 80px;
-    }
-
+  .resume-widget {
+    position: relative;
+    padding: 35px;
+    margin-bottom: 30px;
+    margin-right: auto;
+  }
+  .box-footer {
+    flex-direction: column-reverse;
+  }
+  .footer-text {
+    text-align: center;
+  }
+  .footer-infos {
+    align-items: center;
+    margin-top: 80px;
+  }
 }
-
-
 
 /* Breakpoint < 768px */
 @media (max-width: 768px) {
-    .navbar {
-        justify-content: space-between;
-        width: 100%;
-    }
-    .box-navbar-logo {
-        width: 50%;
-        font-size: 28px;
-    }
-    
-    .btn-header {
-        padding: 10px 18px;
-    }
+  .navbar {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .box-navbar-logo {
+    width: 50%;
+    font-size: 28px;
+  }
 
-    .box-navbar-menu {
-        display: none;
+  .btn-header {
+    padding: 10px 18px;
+  }
 
-    }  
+  .box-navbar-menu {
+    display: none;
+  }
 
-    #intro p {
-        font-size: 16px;
-    }
+  #intro p {
+    font-size: 16px;
+  }
 
-    #intro h1,
-    #intro h2 {
-        font-size: 30px;
-    }
+  #intro h1,
+  #intro h2 {
+    font-size: 30px;
+  }
 
-    .btn-big {
-        font-size: 15px;
-        padding: 15px 20px;
-    }
-    #about {
-        padding: 100px 20px 80px 20px;
-    }
+  .btn-big {
+    font-size: 15px;
+    padding: 15px 20px;
+  }
+  #about {
+    padding: 100px 20px 80px 20px;
+  }
 
-    #resume {
-        padding: 40px 0px;
-    }
-    .resume-experience{
-        margin-top: 60px;
-    }   
+  #resume {
+    padding: 40px 0px;
+  }
+  .resume-experience {
+    margin-top: 60px;
+  }
 
-    .resume-education h3, .resume-experience h3 {
-        font-size: 34px;
-    }
-    .resume-education h4, .resume-experience h4 {
-        font-size: 18px;
-    }
+  .resume-education h3,
+  .resume-experience h3 {
+    font-size: 34px;
+  }
+  .resume-education h4,
+  .resume-experience h4 {
+    font-size: 18px;
+  }
 
+  #portfolio {
+    padding: 100px 20px;
+    background-color: var(--color-background-contrast);
+  }
 
-    #portfolio {
-        padding: 100px 20px;
-        background-color: var(--color-background-contrast);
-    }
-
-    .container-works {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-    .box-skills-card {
-        column-gap: 10px;
-    }
-    .skill-card {
-        width: 9rem;
-    }
-    .box-footer {
-        display: flex;
-        max-width: 1320px;
-        margin: 0 auto;
-        padding: 0 40px;
-        box-sizing: border-box;
-        flex-direction: column-reverse;
-    }
-    
-
-
+  .container-works {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  .box-skills-card {
+    column-gap: 10px;
+  }
+  .skill-card {
+    width: 9rem;
+  }
+  .box-footer {
+    display: flex;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+    flex-direction: column-reverse;
+  }
 }
